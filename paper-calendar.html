@@ -673,7 +673,7 @@
       },
       _updateSelection: function() {
         // Force the day selection circle to maintain a 1:1 ratio
-        var selected = this.$$('.day-item.selected');
+        var selected = this.shadowRoot.querySelector('.day-item.selected');
         if (!selected) {
           return;
         }
